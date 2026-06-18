@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif; /* Combina com o estilo moderno de e-commerce */
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   Contentor do Carrinho
+   ========================================================================== */
+.cart-container {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    /* Sombra suave idêntica aos cards de produtos da sua loja */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    border-top: 5px solid #ff0000; /* Detalhe em vermelho Pippo Mania no topo */
+}
+
+.cart-container h2 {
+    font-size: 1.8rem;
+    color: #111;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* ==========================================================================
+   Lista de Itens
+   ========================================================================== */
+#cart-items-list {
+    margin-bottom: 25px;
+    max-height: 400px; /* Adiciona scroll caso haja muitos itens */
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Estilização de cada linha de produto */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+    background-color: #fcfcfc;
+}
+
+/* Detalhes do texto do produto */
+.item-details strong {
+    font-size: 1.1rem;
+    color: #222;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.item-details span {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Preço individual/total do item */
+.item-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+/* ==========================================================================
+   Secção do Total
+   ========================================================================== */
+.total {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: right;
+    margin-top: 25px;
+    color: #111;
+}
+
+.total span {
+    color: #ff0000; /* Destaca o valor total em vermelho */
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+/* ==========================================================================
+   Botões de Ação
+   ========================================================================== */
+.btn-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Botão Esvaziar Carrinho */
+.clear-btn {
+    background-color: transparent;
+    color: #ff4d4d;
+    border: 2px solid #ff4d4d;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+/* Botão Continuar Comprando (Voltar) */
+.back-btn {
+    background-color: #ff0000; /* Vermelho padrão dos botões "Compre já" */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3);
+}
+
+.back-btn:active {
+    transform: translateY(0);
+}
+
+.checkout-btn {
+    background-color: #25d366; /* Cor verde do WhatsApp para indicar sucesso/checkout */
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+    transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #1ebd59;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+.checkout-btn:active {
+    transform: translateY(0);
+}
+
+/* Ajuste sutil na barra de botões para acomodar os 3 elementos */
+.btn-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    flex-wrap: wrap; /* Garante que quebre linha se a tela for muito pequena */
+    margin-top: 30px;
+}

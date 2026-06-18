@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pippo E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="e.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="imagens/LOGO.png" alt="Logo Pippo" class="logo-img">
+            </div>
+
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="cart-box">
+                <a href="carrinho.html" class="cart-link" aria-label="Ver carrinho de compras">
+                    <button type="button" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </a>
+            </div>
+
+            <a href="cadastro.html" class="user-btn" aria-label="Criar conta ou Entrar">
+                <i class="fa-solid fa-circle-user"></i>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="filter-btn active" data-year="all">Todos</a></li>
+                <li><a href="#" class="filter-btn" data-year="2026">Album 2026</a></li>
+                <li><a href="#" class="filter-btn" data-year="2022">Album 2022</a></li>
+                <li><a href="#" class="filter-btn" data-year="2018">Album 2018</a></li>
+                <li><a href="#" class="filter-btn" data-year="2014">Album 2014</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-section">
+        <h1 class="h1">ALBUNS E PACOTES A VENDA</h1>
+        <div class="products-grid">
+            <div class="product-card" data-year="2026">
+                <img src="imagens/2026.png" alt="Álbum 2026">
+                <span>Album 2026</span>
+                <p>R$ 25,00</p>
+                <button type="button" class="btn-add-cart" data-id="album-2026" data-name="Álbum 2026"
+                    data-price="25.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2022">
+                <img src="imagens/2022.png" alt="Álbum 2022">
+                <span>Album 2022</span>
+                <p>R$ 15,00</p>
+                <button type="button" class="btn-add-cart" data-id="album-2022" data-name="Álbum 2022"
+                    data-price="15.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2018">
+                <img src="imagens/2018.png" alt="Álbum 2018">
+                <span>Album 2018</span>
+                <p>R$ 30,00</p>
+                <button type="button" class="btn-add-cart" data-id="album-2018" data-name="Álbum 2018"
+                    data-price="30.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2014">
+                <img src="imagens/2014.png" alt="Álbum 2014">
+                <span>Album 2014</span>
+                <p>R$ 67,00</p>
+                <button type="button" class="btn-add-cart" data-id="album-2014" data-name="Álbum 2014"
+                    data-price="67.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2026">
+                <img src="imagens/Pacote2026.png" alt="Pacote 2026">
+                <span>Pacote 2026</span>
+                <p>R$ 7,00</p>
+                <button type="button" class="btn-add-cart" data-id="pacote-2026" data-name="Pacote 2026"
+                    data-price="7.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2022">
+                <img src="imagens/Pacote 2022.png" alt="Pacote 2022">
+                <span>Pacote 2022</span>
+                <p>R$ 4,00</p>
+                <button type="button" class="btn-add-cart" data-id="pacote-2022" data-name="Pacote 2022"
+                    data-price="4.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2018">
+                <img src="imagens/Pacote 2018.png" alt="Pacote 2018">
+                <span>Pacote 2018</span>
+                <p>R$ 6,00</p>
+                <button type="button" class="btn-add-cart" data-id="pacote-2018" data-name="Pacote 2018"
+                    data-price="6.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2014">
+                <img src="imagens/Pacote 2014.png" alt="Pacote 2014">
+                <span>Pacote 2014</span>
+                <p>R$ 20,00</p>
+                <button type="button" class="btn-add-cart" data-id="pacote-2014" data-name="Pacote 2014"
+                    data-price="20.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2026">
+                <img src="imagens/Combo2026.png" alt="Combo 2026">
+                <span>Combo 2026</span>
+                <p>R$ 50,00</p>
+                <button type="button" class="btn-add-cart" data-id="Combo-2026" data-name="Combo 2026"
+                    data-price="50.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2022">
+                <img src="imagens/Combo2022.png" alt="Combo 2022">
+                <span>Combo 2022</span>
+                <p>R$ 30,00</p>
+                <button type="button" class="btn-add-cart" data-id="Combo-2022" data-name="Combo 2022"
+                    data-price="30.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2018">
+                <img src="imagens/Combo2018.png" alt="Combo 2018">
+                <span>Combo 2018</span>
+                <p>R$ 60,00</p>
+                <button type="button" class="btn-add-cart" data-id="Combo-2018" data-name="Combo 2018"
+                    data-price="60.00">
+                    Compre já
+                </button>
+            </div>
+            <div class="product-card" data-year="2014">
+                <img src="imagens/Combo2014.jpg" alt="Combo 2014">
+                <span>Combo 2014</span>
+                <p>R$ 125,00</p>
+                <button type="button" class="btn-add-cart" data-id="Combo-2014" data-name="Combo 2014"
+                    data-price="125.00">
+                    Compre já
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>&copy; 2026 Pippo Mania</b></p>
+        <p><strong>Telefone / WhatsApp: (11) 98923-3968</strong></p>
+        <p><b>Instagram: @Pippo_1109</b></p>
+    </footer>
+
+    <div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-img-container">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title">Nome do Produto</h2>
+                <p id="modal-price" class="modal-price">R$ 0,00</p>
+                <p class="modal-description">Disponível para entrega, Complete sua coleção Pippo Mania com as melhores figurinhas e álbuns oficiais!</p>
+                <button type="button" id="modal-add-cart" class="btn-add-cart">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="e.js"></script>
+</body>
+
+</html>

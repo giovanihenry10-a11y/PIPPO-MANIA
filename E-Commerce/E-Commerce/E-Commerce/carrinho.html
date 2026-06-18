@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho - Pippo Mania</title>
+</head>
+<body>
+
+<div class="cart-container">
+    <h2>Seu Carrinho</h2>
+    
+    <div id="cart-items-list"></div>
+    
+    <div class="total">
+        Total: R$ <span id="cart-total-price">0,00</span>
+    </div>
+    
+    <div class="btn-actions">
+        <button class="clear-btn" onclick="clearCart()">Esvaziar Carrinho</button>
+
+        <button class="checkout-btn" onclick="checkoutCart()">Confirmar Compra</button>
+        
+        <a href="e.html" class="back-btn">Continuar Comprando</a>
+    </div>
+</div>
+
+<script src="carrinho.js"></script>
+</body>
+</html>
